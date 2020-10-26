@@ -1,0 +1,118 @@
+
+.blog-wrapper{
+    background-color: rgb(255, 255, 226);
+}
+.Runimg1{
+    width:500px;
+    height:500px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 100px;
+}
+.Runimg1 img{
+    width: 100%;
+    height: 100%;
+   float:left;
+   position:absolute;
+   top:0;
+   left:0;
+   opacity: 0;
+}
+.Runimg1 img:first-child{
+    animation:h1 8s linear 0s infinite;
+    -webkit-animation:h1 8s linear 0s infinite; /*自定義動畫名為h1,8s完成該動畫，勻速執行該動畫，立即執行，迴圈執行動畫 */
+}
+.Runimg1 img:nth-child(2){
+    animation:h1 8s linear 2s infinite;
+    -webkit-animation:h1 8s linear  2s infinite ;
+}
+.Runimg1 img:nth-child(3){
+    animation:h1 8s linear 4s infinite ;
+    -webkit-animation:h1 8s linear  4s infinite  ;
+}
+.Runimg1 img:nth-child(4){
+    /*animation-name: h4;
+    animation-delay: 0s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;*/
+    animation:h1 8s linear 6s infinite ;
+    -webkit-animation:h1 8s linear  6s infinite  ;
+}
+
+@keyframes h1 {
+          0%{
+              opacity: 1;
+          }
+          25%{
+                opacity: 0;
+            }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+-webkit-@keyframes h1 {
+            0%{
+                opacity: 1;
+            }
+            25%{
+                opacity:0;
+            }
+            50%{
+                opacity: 0;
+            }
+            75%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+/*runing img*/
+
+.history_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-content{
+    width: 800px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+
+.brand_text{
+    color: darkslateblue;
+}
+
+.brand_text_end{
+    text-align: right;
+}
+.history_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-catagory-area {
+    margin-right: 100px;
+}
+
+.histroy_2 p{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.footer{
+    margin-top: 30px;
+}
